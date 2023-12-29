@@ -1,0 +1,24 @@
+features:
+- index
+- power
+- torque
+- listed_date
+- major_options
+- exterior_color
+- interior_color
+- city
+- engine_cylinders
+- model_name
+- make_name
+- transmission_display
+- body_type
+- fleet
+- frame_damaged
+- franchise_dealer
+- fuel_type
+- has_accidents
+- is_new
+- listing_color
+- salvage
+- transmission
+- wheel_system

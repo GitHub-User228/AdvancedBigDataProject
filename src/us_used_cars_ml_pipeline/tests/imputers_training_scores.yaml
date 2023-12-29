@@ -1,0 +1,106 @@
+categorical_feats:
+    Adaptive_Cruise_Control:
+        accuracy: 0.8329087864228591
+        precision: 0.6937370465004
+        recall: 0.8329087864228591
+    Alloy_Wheels:
+        accuracy: 0.6496414957935333
+        precision: 0.42203407305685925
+        recall: 0.6496414957935333
+    Android_Auto:
+        accuracy: 0.7179280468565427
+        precision: 0.5154206804632501
+        recall: 0.7179280468565427
+    Backup_Camera:
+        accuracy: 0.7825722653487238
+        precision: 0.6124193504930334
+        recall: 0.7825722653487238
+    Blind_Spot_Monitoring:
+        accuracy: 0.72954887551986
+        precision: 0.5322415617722922
+        recall: 0.72954887551986
+    Bluetooth:
+        accuracy: 0.6785237486876369
+        precision: 0.4603944775331234
+        recall: 0.6785237486876369
+    CarPlay:
+        accuracy: 0.6868627830794822
+        precision: 0.4717804827796919
+        recall: 0.6868627830794822
+    Heated_Seats:
+        accuracy: 0.5715875665792194
+        precision: 0.32671234626795354
+        recall: 0.5715875665792194
+    Leather_Seats:
+        accuracy: 0.7183240418209498
+        precision: 0.5159894290579856
+        recall: 0.7183240418209498
+    Navigation_System:
+        accuracy: 0.6335691761401278
+        precision: 0.4014099009548802
+        recall: 0.6335691761401278
+    Parking_Sensors:
+        accuracy: 0.8146695046927829
+        precision: 0.6636864018763842
+        recall: 0.8146695046927829
+    Remote_Start:
+        accuracy: 0.6771174253833145
+        precision: 0.45848800775772847
+        recall: 0.6771174253833145
+    Sunroof_Moonroof:
+        accuracy: 0.6658071224602298
+        precision: 0.4432991243187714
+        recall: 0.6658071224602298
+    Third_Row_Seating:
+        accuracy: 0.875849793623548
+        precision: 0.7671128609904116
+        recall: 0.875849793623548
+    labelencoding_fleet:
+        accuracy: 0.7872551749744732
+        precision: 0.6197707105240884
+        recall: 0.7872551749744732
+    labelencoding_frame_damaged:
+        accuracy: 0.9904549734123669
+        precision: 0.9810010543572925
+        recall: 0.9904549734123669
+    labelencoding_has_accidents:
+        accuracy: 0.8450425004309716
+        precision: 0.7140968275346287
+        recall: 0.8450425004309716
+    labelencoding_salvage:
+        accuracy: 0.9932668974022357
+        precision: 0.9865791294750635
+        recall: 0.9932668974022357
+numerical_feats:
+    back_legroom:
+        MAE: 1.3973384675405407
+        R2: 0.6481021745080809
+        RMSE: 1.8725000631602755
+    city_fuel_economy:
+        MAE: 2.221512803997363
+        R2: 0.6951226621103423
+        RMSE: 3.536944092472632
+    highway_fuel_economy:
+        MAE: 2.318105662647776
+        R2: 0.7292471013931174
+        RMSE: 3.257008297603391
+    owner_count:
+        MAE: 0.48996635631449287
+        R2: 0.33172169214142244
+        RMSE: 0.7455530193533808
+    power_rpm:
+        MAE: 319.7215883855478
+        R2: 0.5617841437600626
+        RMSE: 483.95794617280075
+    power_value:
+        MAE: 10.99875261183043
+        R2: 0.9352448045567778
+        RMSE: 22.829322917794556
+    torque_rpm:
+        MAE: 506.63163168720877
+        R2: 0.6924400382059173
+        RMSE: 696.2324415289859
+    torque_value:
+        MAE: 27.87101266686363
+        R2: 0.850288375118417
+        RMSE: 45.76731938650889

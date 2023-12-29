@@ -1,0 +1,12 @@
+CVTuner:
+    default:
+        featuresCol: features
+        labelCol: price
+        seed: 42
+        maxIter: 20
+        maxBins: 32
+        minInstancesPerNode: 5
+        minWeightFractionPerNode: 0
+    grid:
+        maxDepth: [3, 4, 5, 6, 7]
+        

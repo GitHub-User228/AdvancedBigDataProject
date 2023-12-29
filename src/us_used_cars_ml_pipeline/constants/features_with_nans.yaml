@@ -1,0 +1,48 @@
+subset_for_dropping:
+- exterior_color
+- interior_color
+- body_type
+- transmission
+- fuel_type
+- engine_cylinders
+median:
+- engine_displacement: 2500.0
+- front_legroom: 41.9
+- fuel_tank_volume: 17.5
+- height: 66.1
+- horsepower: 242.0
+- length: 189.9
+- maximum_seating: 5.0
+- mileage: 9869.0
+- seller_rating: 4.338235294117647
+- wheelbase: 111.0
+- width: 77.2
+top_class:
+- labelencoding_wheel_system: FWD
+model:
+- back_legroom
+- city_fuel_economy
+- labelencoding_fleet
+- labelencoding_frame_damaged
+- labelencoding_has_accidents
+- highway_fuel_economy
+- labelencoding_salvage
+- torque_value
+- torque_rpm
+- power_value
+- power_rpm
+- owner_count
+- Backup_Camera
+- Bluetooth
+- Alloy_Wheels
+- Heated_Seats
+- Navigation_System
+- Sunroof_Moonroof
+- Remote_Start
+- CarPlay
+- Android_Auto
+- Leather_Seats
+- Blind_Spot_Monitoring
+- Parking_Sensors
+- Adaptive_Cruise_Control
+- Third_Row_Seating

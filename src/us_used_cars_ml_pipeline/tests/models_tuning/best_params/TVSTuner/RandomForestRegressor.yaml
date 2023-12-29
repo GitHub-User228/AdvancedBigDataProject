@@ -1,0 +1,5 @@
+params:
+    maxBins: 64
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.3
+r2: 0.753322091544195

@@ -1,0 +1,4 @@
+params:
+    maxDepth: 1
+    numTrees: 80
+r2: 0.75213160682125

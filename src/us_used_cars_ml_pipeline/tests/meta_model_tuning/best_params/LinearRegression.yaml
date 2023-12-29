@@ -1,0 +1,4 @@
+params:
+    elasticNetParam: 1
+    regParam: 100
+r2: 0.778555345974673

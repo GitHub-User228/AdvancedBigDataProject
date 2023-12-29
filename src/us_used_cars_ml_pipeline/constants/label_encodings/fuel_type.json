@@ -1,0 +1,9 @@
+{
+    "Gasoline": 0,
+    "Flex Fuel Vehicle": 1,
+    "Hybrid": 2,
+    "Diesel": 3,
+    "Biodiesel": 4,
+    "Compressed Natural Gas": 5,
+    "Propane": 6
+}

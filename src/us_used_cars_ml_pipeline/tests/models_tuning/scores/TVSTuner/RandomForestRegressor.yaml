@@ -1,0 +1,130 @@
+params:
+-   maxBins: 64
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.3
+-   maxBins: 64
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.3
+-   maxBins: 64
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.3
+-   maxBins: 64
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.3
+-   maxBins: 32
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.3
+-   maxBins: 32
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.3
+-   maxBins: 32
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.3
+-   maxBins: 32
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.3
+-   maxBins: 64
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.2
+-   maxBins: 64
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.2
+-   maxBins: 64
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.2
+-   maxBins: 64
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.2
+-   maxBins: 32
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.2
+-   maxBins: 32
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.2
+-   maxBins: 32
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.2
+-   maxBins: 32
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.2
+-   maxBins: 32
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.1
+-   maxBins: 32
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.1
+-   maxBins: 32
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.1
+-   maxBins: 32
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.1
+-   maxBins: 64
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.1
+-   maxBins: 64
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.1
+-   maxBins: 64
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.1
+-   maxBins: 64
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.1
+-   maxBins: 32
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.0
+-   maxBins: 32
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.0
+-   maxBins: 32
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.0
+-   maxBins: 64
+    minInstancesPerNode: 50
+    minWeightFractionPerNode: 0.0
+-   maxBins: 64
+    minInstancesPerNode: 10
+    minWeightFractionPerNode: 0.0
+-   maxBins: 64
+    minInstancesPerNode: 20
+    minWeightFractionPerNode: 0.0
+-   maxBins: 64
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.0
+-   maxBins: 32
+    minInstancesPerNode: 5
+    minWeightFractionPerNode: 0.0
+r2:
+- 0.753322091544195
+- 0.7491508243165532
+- 0.7484547335729763
+- 0.7472564022475108
+- 0.7445241041702886
+- 0.7416264333851067
+- 0.7406890204703673
+- 0.7390134110288533
+- 0.4804637289805149
+- 0.4804637289805149
+- 0.4804637289805149
+- 0.4804637289805149
+- 0.47850917243201274
+- 0.4785091724320125
+- 0.4785091724320125
+- 0.4785091724320125
+- 0.3959690596580966
+- 0.3959690596580966
+- 0.3959690596580966
+- 0.3959690596580966
+- 0.3959292343894478
+- 0.3959292343894478
+- 0.3959292343894478
+- 0.3959292343894476
+- 0.3159726550523475
+- 0.3159726550523475
+- 0.3159726550523475
+- 0.3159726550523475
+- 0.31358074135947045
+- 0.31358074135947045
+- 0.31358074135947045
+- 0.31358074135947045

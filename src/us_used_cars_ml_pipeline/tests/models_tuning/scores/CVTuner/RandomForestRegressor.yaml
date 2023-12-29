@@ -1,0 +1,47 @@
+params:
+-   maxDepth: 1
+    numTrees: 80
+-   maxDepth: 1
+    numTrees: 20
+-   maxDepth: 1
+    numTrees: 50
+-   maxDepth: 2
+    numTrees: 80
+-   maxDepth: 2
+    numTrees: 50
+-   maxDepth: 2
+    numTrees: 20
+-   maxDepth: 3
+    numTrees: 20
+-   maxDepth: 3
+    numTrees: 50
+-   maxDepth: 3
+    numTrees: 80
+-   maxDepth: 4
+    numTrees: 20
+-   maxDepth: 4
+    numTrees: 50
+-   maxDepth: 4
+    numTrees: 80
+-   maxDepth: 5
+    numTrees: 20
+-   maxDepth: 5
+    numTrees: 50
+-   maxDepth: 5
+    numTrees: 80
+r2:
+- 0.75213160682125
+- 0.7496221496264903
+- 0.7472935461715066
+- 0.7105553576226988
+- 0.7095412599289396
+- 0.7077602452424054
+- 0.6380566020561066
+- 0.6375604681232838
+- 0.6352368109720685
+- 0.515675747909075
+- 0.5137718740752604
+- 0.5107204584120464
+- 0.33280004193717816
+- 0.3296848303403955
+- 0.328248930783713

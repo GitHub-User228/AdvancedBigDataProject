@@ -1,0 +1,107 @@
+params:
+-   elasticNetParam: 1.0
+    regParam: 100.0
+-   elasticNetParam: 0.75
+    regParam: 100.0
+-   elasticNetParam: 0.5
+    regParam: 100.0
+-   elasticNetParam: 0.25
+    regParam: 100.0
+-   elasticNetParam: 0.25
+    regParam: 0.1
+-   elasticNetParam: 0.5
+    regParam: 10.0
+-   elasticNetParam: 0.0
+    regParam: 100.0
+-   elasticNetParam: 1.0
+    regParam: 10.0
+-   elasticNetParam: 0.75
+    regParam: 10.0
+-   elasticNetParam: 0.5
+    regParam: 0.01
+-   elasticNetParam: 1.0
+    regParam: 0.1
+-   elasticNetParam: 0.5
+    regParam: 0.001
+-   elasticNetParam: 0.75
+    regParam: 0.001
+-   elasticNetParam: 0.75
+    regParam: 0.1
+-   elasticNetParam: 0.75
+    regParam: 0.01
+-   elasticNetParam: 1.0
+    regParam: 0.01
+-   elasticNetParam: 0.75
+    regParam: 0.0001
+-   elasticNetParam: 0.5
+    regParam: 1.0
+-   elasticNetParam: 0.5
+    regParam: 0.1
+-   elasticNetParam: 1.0
+    regParam: 1.0
+-   elasticNetParam: 0.25
+    regParam: 0.001
+-   elasticNetParam: 0.25
+    regParam: 0.0001
+-   elasticNetParam: 0.5
+    regParam: 0.0001
+-   elasticNetParam: 0.75
+    regParam: 1.0
+-   elasticNetParam: 0.25
+    regParam: 1.0
+-   elasticNetParam: 1.0
+    regParam: 0.0001
+-   elasticNetParam: 0.25
+    regParam: 10.0
+-   elasticNetParam: 0.25
+    regParam: 0.01
+-   elasticNetParam: 0.0
+    regParam: 0.0001
+-   elasticNetParam: 0.0
+    regParam: 0.001
+-   elasticNetParam: 0.0
+    regParam: 0.01
+-   elasticNetParam: 0.0
+    regParam: 10.0
+-   elasticNetParam: 0.0
+    regParam: 0.1
+-   elasticNetParam: 0.0
+    regParam: 1.0
+-   elasticNetParam: 1.0
+    regParam: 0.001
+r2:
+- 0.7203745367960134
+- 0.7203729997221557
+- 0.720371689353553
+- 0.7203714277260821
+- 0.7203691473789866
+- 0.7203687333318437
+- 0.7203686895985641
+- 0.7203580626130524
+- 0.7203492680111062
+- 0.7203341887592708
+- 0.7203293288885986
+- 0.7203256535070276
+- 0.7203186980638192
+- 0.720318697297778
+- 0.7203176918023975
+- 0.7203156555088692
+- 0.7203129667199144
+- 0.7202904931599345
+- 0.7202820590987409
+- 0.720271146097578
+- 0.7202711326931608
+- 0.7202646805078421
+- 0.7202582240247302
+- 0.7202582195621758
+- 0.7202547694670243
+- 0.7202403536169217
+- 0.7202375369830134
+- 0.7202276449935976
+- 0.7202223731189404
+- 0.7202144555769586
+- 0.7201783707346512
+- 0.7197406420998866
+- 0.7190518295786978
+- 0.7181904192201101
+- 0.717228508111933

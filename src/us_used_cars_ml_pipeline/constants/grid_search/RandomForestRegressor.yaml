@@ -1,0 +1,11 @@
+CVTuner:
+    default:
+        featuresCol: features
+        labelCol: price
+        seed: 42
+        minInstancesPerNode: 5
+        minWeightFractionPerNode: 0
+        maxBins: 32
+    grid:
+        numTrees: [20, 50, 80]
+        maxDepth: [1, 2, 3, 4, 5]

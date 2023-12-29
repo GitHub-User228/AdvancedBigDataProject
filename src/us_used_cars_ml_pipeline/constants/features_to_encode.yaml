@@ -1,0 +1,25 @@
+glove:
+- exterior_color
+- interior_color
+- city
+- model_name
+kfold_mean_target_encoding:
+- engine_cylinders
+- exterior_color
+- interior_color
+- city
+- model_name
+- make_name
+- transmission_display
+label_encoding:
+- body_type
+- fleet
+- frame_damaged
+- franchise_dealer
+- fuel_type
+- has_accidents
+- is_new
+- listing_color
+- salvage
+- transmission
+- wheel_system

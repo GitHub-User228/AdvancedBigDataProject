@@ -1,0 +1,136 @@
+data_conversion:
+    path_to_csv_data: 'hdfs:///home/eabraham-373705/data/raw/'
+    path_to_parquet_data: 'hdfs:///home/eabraham-373705/data/raw/'
+clean_data:
+    path_to_cleaned_data: 'hdfs:///home/eabraham-373705/data/cleaned/'
+    path_to_raw_data: 'hdfs:///home/eabraham-373705/data/raw/'
+    features_to_encode: 'us_used_cars_ml_pipeline/constants/features_to_encode.yaml'
+    features_with_nans: 'us_used_cars_ml_pipeline/constants/features_with_nans.yaml'
+    features_to_drop: 'us_used_cars_ml_pipeline/constants/features_to_drop.yaml'
+    glove_model: 'us_used_cars_ml_pipeline/models/glove/glove-twitter-25.bin'
+    data_types: 'us_used_cars_ml_pipeline/constants/data_types.yaml'
+    popular_options: 'us_used_cars_ml_pipeline/constants/popular_options.yaml'
+    label_encodings: 'us_used_cars_ml_pipeline/constants/label_encodings'
+    kfold_encodings: 'hdfs:///home/eabraham-373705/data/encodings/kfold_encodings'
+    rare_classes: 'us_used_cars_ml_pipeline/constants/rare_classes.yaml'
+    seed: 42
+    n_folds: 5
+    rare_classes_count: [1, 2, 3, 4, 5, 6, 7]
+data_preparation:
+    path_to_cleaned_data: 'hdfs:///home/eabraham-373705/data/cleaned/'
+    path_to_prepared_data: 'hdfs:///home/eabraham-373705/data/prepared/'
+    scaler_name: MinMaxScaler
+    path_to_scalers: 'hdfs:///home/eabraham-373705/models/scalers/'
+    path_to_features_list: 'us_used_cars_ml_pipeline/constants/features_list_for_data_preparation.yaml'
+    path_to_imputers: 'hdfs:///home/eabraham-373705/models/imputers/'
+    path_to_scores_file: 'us_used_cars_ml_pipeline/tests/imputers_training_scores.yaml'
+    models:
+        LogisticRegression: 
+            maxIter: 100
+            regParam: 1
+            elasticNetParam: 0.5
+        LinearRegression:
+            maxIter: 100
+            regParam: 1
+            elasticNetParam: 0.5
+        RandomForestRegressor:
+            maxDepth: 5
+            numTrees: 50
+            seed: 42
+feature_selection:
+    path_to_prepared_data: 'hdfs:///home/eabraham-373705/data/prepared/prepared_data.parquet'
+    path_to_save_importances: 'us_used_cars_ml_pipeline/tests/importances/'
+    path_to_feature_selection_scores: 'us_used_cars_ml_pipeline/tests/feature_selection_scores/'
+    seed: 42
+    test_ratio: 0.05
+    n_permutations: 2
+    verbose: 0
+    metrics: [rmse, mae, r2]
+    n_feats: 200
+    searching_params:
+        LinearRegression:
+            max_feats: 100
+            min_feats: 1
+            step: 5
+        RandomForestRegressor:
+            max_feats: 100
+            min_feats: 1
+            step: 5  
+        GBTRegressor:
+            max_feats: 100
+            min_feats: 1
+            step: 5
+    models:
+        LinearRegression:
+            maxIter: 50
+            regParam: 1
+            elasticNetParam: 0.5
+        RandomForestRegressor:
+            maxDepth: 5
+            numTrees: 50
+            seed: 42
+        GBTRegressor:
+            maxDepth: 5
+            maxIter: 20
+            seed: 42
+models_tuning:
+    path_to_prepared_data: 'hdfs:///home/eabraham-373705/data/prepared/prepared_data.parquet'
+    path_to_importances: 'us_used_cars_ml_pipeline/tests/importances/'
+    path_to_feature_selection_scores: 'us_used_cars_ml_pipeline/tests/feature_selection_scores/'
+    path_to_parameters_grid: 'us_used_cars_ml_pipeline/constants/grid_search/'
+    path_to_best_models: 'hdfs:///home/eabraham-373705/models/best/'
+    path_to_best_params: 'us_used_cars_ml_pipeline/tests/models_tuning/best_params/'
+    path_to_scores: 'us_used_cars_ml_pipeline/tests/models_tuning/scores/'
+    metric: r2
+    tuner: CVTuner
+    seed: 42
+    test_ratio: 0.05
+    n_folds: 5
+    models:
+        - LinearRegression
+        - RandomForestRegressor
+        - GBTRegressor
+    n_feats: 
+        LinearRegression: 70
+        RandomForestRegressor: 80
+        GBTRegressor: 70
+stacking_regressor_modeling:
+    path_to_prepared_data: 'hdfs:///home/eabraham-373705/data/prepared/'
+    path_to_importances: 'us_used_cars_ml_pipeline/tests/importances/'
+    path_to_parameters_grid: 'us_used_cars_ml_pipeline/constants/grid_search/'
+    path_to_best_params: 'us_used_cars_ml_pipeline/tests/models_tuning/best_params/CVTuner/'
+    path_to_predictions: 'hdfs:///home/eabraham-373705/data/predictions'
+    path_to_stacking_models: 'hdfs:///home/eabraham-373705/models/stacking_models'
+    n_folds: 5
+    seed: 42
+    base_models_names:
+        - LinearRegression
+        - RandomForestRegressor
+        - GBTRegressor  
+    n_feats: 
+        LinearRegression: 70
+        RandomForestRegressor: 80
+        GBTRegressor: 70
+    meta_model_name: LinearRegression
+    meta_model_params:
+        labelCol: price
+        predictionCol: prediction
+        featuresCol: first_level_predictions
+        maxIter: 100
+        regParam: 1
+        elasticNetParam: 0.5
+    use_best_params: 1
+    tuner: MetaModelTuner
+    tuner_config:
+        metric: r2
+        path_to_parameters_grid: 'us_used_cars_ml_pipeline/constants/grid_search/meta_model/'
+        path_to_scores: 'us_used_cars_ml_pipeline/tests/meta_model_tuning/scores/'
+        path_to_best_params: 'us_used_cars_ml_pipeline/tests/meta_model_tuning/best_params/'
+metrics_calculation:
+    path_to_raw_data: 'hdfs:///home/eabraham-373705/data/raw/'
+    raw_data_filename: 'raw_data.parquet'
+    path_to_predictions: 'hdfs:///home/eabraham-373705/data/predictions'
+    predictions_filename: 'second_level_predictions.parquet'
+    path_to_metrics: 'hdfs:///home/eabraham-373705/data/metrics/'
+    metrics_filename: 'metrics.json'
+    metrics: [rmse, mae, r2]

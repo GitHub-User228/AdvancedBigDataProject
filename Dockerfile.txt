@@ -1,0 +1,19 @@
+# Start with our existing PySpark-HDFS-Jupyter image
+
+FROM node03.st:5000/pyspark-hdfs-jupyter:eabraham-373705-v4
+
+USER root
+
+# Copy entrypoint.sh from your host system to the container
+COPY entrypoint.sh /opt/entrypoint.sh
+
+COPY decom.sh /opt/decom.sh
+
+# Make the script executable
+RUN chmod 755 /opt/entrypoint.sh
+
+USER eabraham-373705
+
+# Set the script as the entrypoint of the container
+ENTRYPOINT ["/opt/entrypoint.sh"]
+

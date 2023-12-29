@@ -1,0 +1,107 @@
+params:
+-   elasticNetParam: 1.0
+    regParam: 100.0
+-   elasticNetParam: 0.75
+    regParam: 100.0
+-   elasticNetParam: 0.25
+    regParam: 0.0001
+-   elasticNetParam: 0.25
+    regParam: 0.01
+-   elasticNetParam: 0.5
+    regParam: 100.0
+-   elasticNetParam: 0.5
+    regParam: 0.001
+-   elasticNetParam: 0.75
+    regParam: 0.1
+-   elasticNetParam: 1.0
+    regParam: 1.0
+-   elasticNetParam: 0.75
+    regParam: 0.01
+-   elasticNetParam: 0.5
+    regParam: 0.01
+-   elasticNetParam: 1.0
+    regParam: 0.0001
+-   elasticNetParam: 0.75
+    regParam: 0.0001
+-   elasticNetParam: 0.25
+    regParam: 0.001
+-   elasticNetParam: 0.75
+    regParam: 10.0
+-   elasticNetParam: 1.0
+    regParam: 0.1
+-   elasticNetParam: 0.5
+    regParam: 0.0001
+-   elasticNetParam: 0.0
+    regParam: 0.0001
+-   elasticNetParam: 0.0
+    regParam: 0.001
+-   elasticNetParam: 0.0
+    regParam: 0.01
+-   elasticNetParam: 0.0
+    regParam: 0.1
+-   elasticNetParam: 0.0
+    regParam: 1.0
+-   elasticNetParam: 0.25
+    regParam: 1.0
+-   elasticNetParam: 0.0
+    regParam: 10.0
+-   elasticNetParam: 0.25
+    regParam: 10.0
+-   elasticNetParam: 0.5
+    regParam: 10.0
+-   elasticNetParam: 0.5
+    regParam: 0.1
+-   elasticNetParam: 1.0
+    regParam: 0.001
+-   elasticNetParam: 0.25
+    regParam: 0.1
+-   elasticNetParam: 0.25
+    regParam: 100.0
+-   elasticNetParam: 0.75
+    regParam: 1.0
+-   elasticNetParam: 1.0
+    regParam: 0.01
+-   elasticNetParam: 1.0
+    regParam: 10.0
+-   elasticNetParam: 0.0
+    regParam: 100.0
+-   elasticNetParam: 0.5
+    regParam: 1.0
+-   elasticNetParam: 0.75
+    regParam: 0.001
+r2:
+- 0.660384218472143
+- 0.6601446864337072
+- 0.6600600797636011
+- 0.6599677543242174
+- 0.6598663621939893
+- 0.6598279371972832
+- 0.6596298245639329
+- 0.659483971447789
+- 0.6593297428020275
+- 0.6592991850056387
+- 0.6591642769961855
+- 0.6591484961643213
+- 0.6590980384341605
+- 0.6590396319568744
+- 0.659002267324761
+- 0.6590007705268373
+- 0.65900055663385
+- 0.6590004561952915
+- 0.6590004448283816
+- 0.6589762047568867
+- 0.6589524578459659
+- 0.6589247323557851
+- 0.6589242824451023
+- 0.6589191920943391
+- 0.6589099468976655
+- 0.6589098971865793
+- 0.6589094246270011
+- 0.6589076118185834
+- 0.658882899237904
+- 0.658633989507704
+- 0.6585223501554603
+- 0.6585107888800417
+- 0.6583802182764317
+- 0.6566954262667543
+- 0.6537757255586423

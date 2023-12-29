@@ -1,0 +1,11 @@
+{
+    "SUV / Crossover": 0,
+    "Sedan": 1,
+    "Pickup Truck": 2,
+    "Minivan": 3,
+    "Hatchback": 4,
+    "Coupe": 5,
+    "Van": 6,
+    "Wagon": 7,
+    "Convertible": 8
+}
