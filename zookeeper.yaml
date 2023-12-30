@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: zookeeper-service
+  name: zookeeper-service
+  namespace: eabraham-373705
+spec:
+  type: NodePort
+  ports:
+    - name: zookeeper-port
+      port: 2181
+      nodePort: 30188
+      targetPort: 2181
+  selector:
+    app: zookeeper
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: zookeeper
+  name: zookeeper
+  namespace: eabraham-373705
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zookeeper
+  template:
+    metadata:
+      labels:
+        app: zookeeper
+    spec:
+      containers:
+        - image: node03.st:5000/wurstmeister/zookeeper:latest
+          imagePullPolicy: IfNotPresent
+          name: zookeeper
+          resources:
+            limits:
+              cpu: 2
+              memory: 4Gi
+          ports:
+            - containerPort: 2181

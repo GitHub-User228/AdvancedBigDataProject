@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spark-executor-config
+  namespace: eabraham-373705
+data:
+  spark-executor.yaml: |
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      labels:
+        spark-role: executor
+    spec:
+      serviceAccountName: spark
+      containers:
+      - name: spark-executor
+        image: node03.st:5000/pyspark-hdfs-jupyter:eabraham-373705-v4
+        imagePullPolicy: Always
+        command: ["/opt/entrypoint.sh", "executor"]
+        resources:
+          limits:
+            memory: "32Gi"
+            cpu: "12"
+        volumeMounts:
+          - mountPath: "/home/jovyan/shared-data"
+            name: shared-storage
+            readOnly: true
+          - mountPath: "/home/jovyan/nfs-home"
+            name: nfs-home-storage
+            readOnly: false
+          - mountPath: "/home/jovyan/.m2"
+            name: shared-storage
+            readOnly: true
+            subPath: "maven_m2"
+      volumes:
+        - name: shared-storage
+          persistentVolumeClaim:
+            claimName: pvc-shared-eabraham-373705
+            readOnly: true
+        - name: nfs-home-storage
+          persistentVolumeClaim:
+            claimName: pvc-eabraham-373705
+            readOnly: false
+

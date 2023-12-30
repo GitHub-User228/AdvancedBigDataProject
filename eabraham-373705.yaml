@@ -1,0 +1,56 @@
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: eabraham-373705
+  name: pyspark-hdfs-jupyter-scalables
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyspark-hdfs-jupyter-scalables
+  template:
+    metadata:
+      labels:
+        app: pyspark-hdfs-jupyter-scalables
+    spec:
+      serviceAccountName: spark
+      containers:
+      - name: pyspark-hdfs-jupyter-scalables-image
+        image: node03.st:5000/pyspark-hdfs-jupyter:eabraham-373705-v4
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8888
+        command: ["start-notebook.sh"]
+        args: ["--NotebookApp.token='scalable'"]
+        resources:
+          limits:
+            memory: "32Gi"
+            cpu: "12"
+        volumeMounts:
+        - mountPath: "/home/jovyan/shared-data"
+          name: shared-storage
+          readOnly: true
+        - mountPath: "/home/jovyan/nfs-home"
+          name: nfs-home-storage
+          readOnly: false
+        - mountPath: "/home/jovyan/.m2"
+          name: shared-storage
+          readOnly: true
+          subPath: "maven_m2"
+        - mountPath: "/nfs/home/eabraham-373705/scalables-config-map"
+          name: spark-config-volume
+          readOnly: true
+      volumes:
+      - name: shared-storage
+        persistentVolumeClaim:
+          claimName: pvc-shared-eabraham-373705
+          readOnly: true
+      - name: nfs-home-storage
+        persistentVolumeClaim:
+          claimName: pvc-eabraham-373705
+          readOnly: false
+      - name: spark-config-volume
+        configMap:
+          name: spark-executor-config
